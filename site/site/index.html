@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Troxy">
+    <meta property="og:description" content="Best provider for tools, cheats and more">
+    <meta property="og:image" content="https://cdn.9discordapp.com/attachments/1156600200694079558/115493407547326485/hacker.ico?ex=65313962&is=651ec462&hm=f322fc072060a93e4cbd7bc21bc07018aaad675e17eed4e8fb0a02795be96618&">
+    <meta property="og:url" content="">
+    <meta name="theme-color" content="#6958bf">
+    <meta name="msapplication-TileColor" content="#6958bf">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron&display=swap">
+    <script src="particles.js"></script>
+    <title>Troxy</title>
+    <link rel="icon" type="image/x-icon" href="/ico/hacker.ico">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: rgb(39, 7, 5);
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 10px;
+            margin: 15px auto;
+            max-width: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(209, 84, 84, 0.28);
+            backdrop-filter: blur(2.4px);
+            -webkit-backdrop-filter: blur(2.4px);
+            position: relative;
+        }
+
+        .header-links {
+            flex: 1;
+            padding: 20px 120px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .header-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 50px;
+            border-radius: 5px;
+            margin-right: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-links a:hover {
+            background-color: #530000;
+        }
+
+        .header-links .active {
+            background-color: #ff0c0c;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #fff;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .download-item {
+            border-radius: 11px;
+            padding: 25px;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+            background: rgba(0, 0, 0, 0.28);
+            backdrop-filter: blur(2.4px);
+            -webkit-backdrop-filter: blur(2.4px);
+        }
+
+        .download-item img {
+            max-height: 150px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .download-item h2 {
+            font-size: 24px;
+            margin: 0;
+            color: #fff;
+        }
+
+        .download-item p {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .download-button {
+            background-color: #690e0e;
+            color: #fff;
+            border: none;
+            padding: 10px 100px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 768px) {
+            .download-button {
+                padding: 10px 80px;
+                font-size: 14px;
+            }
+        }
+
+        .download-button:hover {
+            transform: scale(1.05);
+        }
+
+        .download-item:hover {
+            transform: scale(1.08);
+        }
+
+        .patched-icon {
+            background-color: #ff0202;
+            color: #fff;
+            padding: 2px 50px;
+            border-radius: 4px;
+            font-weight: bold;
+            box-shadow: 0 0 10px #ff0202;
+            text-align: center;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .new-icon {
+            background-color: #00aa25;
+            color: #fff;
+            padding: 2px 50px;
+            border-radius: 4px;
+            font-weight: bold;
+            box-shadow: 0 0 10px #00aa25;
+            text-align: center;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+
+        .soon-icon {
+            background-color: gold;
+            color: #ffffff;
+            padding: 2px 50px;
+            border-radius: 4px;
+            font-weight: bold;
+            box-shadow: 0 0 10px gold;
+            text-align: center;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.06);
+            }
+        }
+
+        @keyframes slide-in {
+            0% {
+                top: -50px;
+            }
+            40% {
+                top: 20px;
+            }
+            70% {
+                top: 10px;
+            }
+            100% {
+                top: 15px;
+            }
+        }
+
+
+
+        .download-butto {
+            background-color: #690e0e;
+            color: #fff;
+            border: none;
+            padding: 10px 100px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 768px) {
+            .download-butto {
+                padding: 10px 80px;
+                font-size: 14px;
+            }
+        }
+
+
+        .download-patched:hover {
+            transform: scale(1.02);
+        }
+
+
+        .download-patched {
+            border-radius: 11px;
+            padding: 25px;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+            background: rgba(0, 0, 0, 0.28);
+            backdrop-filter: blur(2.4px);
+            -webkit-backdrop-filter: blur(2.4px);
+        }
+
+        .download-patched img {
+            max-height: 150px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .download-patched h2 {
+            font-size: 24px;
+            margin: 0;
+            color: #fff;
+        }
+
+        .download-patched p {
+            color: #999;
+            font-size: 14px;
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="particles-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+<div class="header">
+    <div class="logo-bar"></div>
+
+    <div class="header-links">
+        <a class="h2" href="/discord/discord.html" target="_blank"><i class="fa-brands fa-discord" style="margin-right: 5px; color: #000000"></i></a>
+        <a class="h1 active" href="index.html"><i class="fas fa-home" style="margin-right: 5px; color: #000000"></i></a>
+        <a class="h2" href="/donate/donate.html" target="_blank"><i class="fas fa-donate" style="margin-bottom: 5px; color: #000000"></i></a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="download-item">
+        <img src="banners/Adobe_Premiere_Pro_CC_icon.svg.png" alt="image">
+        <h2>Premiere Pro</h2>
+        <p></p>
+        <p></p>
+        <div class="new-icon">Working</div>
+        <a class="download-button" href="https://link-hub.net/980907/premiere-pro-crack" target="_blank"><i class="fas fa-download" style="margin-right: 5px;"></i>Download</a>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="download-item">
+        <img src="banners/csgo-banner.jpg" alt="image">
+        <h2>Csgo Skinchanger</h2>
+        <p></p>
+        <p></p>
+        <div class="soon-icon">Soon</div>
+        <a class="download-button"><i class="fas fa-download" style="margin-right: 5px;"></i>Download</a>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="download-patched">
+        <img src="banners/tiktok-5962992_960_720.webp" alt="image">
+        <h2>Tiktok Viewbot</h2>
+        <p></p>
+        <p></p>
+        <div class="soon-icon">Soon</div>
+        <a class="download-butto">
+            <i class="fas fa-download" style="margin-right: 5px;"></i>Download
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="download-patched">
+        <img src="banners/tiktok-5962992_960_720.webp" alt="image">
+        <h2>Tiktok Likebot</h2>
+        <p></p>
+        <p></p>
+        <div class="patched-icon">Patched</div>
+        <a class="download-butto">
+            <i class="fas fa-download" style="margin-right: 5px;"></i>Download
+            <i class="fas fa-lock" style="margin-left: 5px;"></i> 
+        </a>
+    </div>
+</div>
+
+<div class="container">
+    <div class="download-patched">
+        <img src="banners/tiktok-5962992_960_720.webp" alt="image">
+        <h2>Tiktok Sharebot</h2>
+        <p></p>
+        <p></p>
+        <div class="patched-icon">Patched</div>
+        <a class="download-butto">
+            <i class="fas fa-download" style="margin-right: 5px;"></i>Download
+            <i class="fas fa-lock" style="margin-left: 5px;"></i> 
+        </a>
+    </div>
+</div>
+
+<script src="particles.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

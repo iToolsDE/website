@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+
+* {
+	box-sizing: border-box;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: '<percentage>';
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: '<percentage>';
+  initial-value: 0%;
+  inherits: true;
+}
+
+body {
+	font-family: Raleway, sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 120px;
+	background-color: rgba(10, 12, 18, 1);
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+p {
+	margin: -10px;
+}
+.Troxy{
+color: bisque;}
+
+:root {
+	--d: 2500ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgb(0, 34, 255);
+	--c2: rgba(24, 71, 114, 0.642);
+  --c3: rgb(10, 114, 175);
+	--c4: rgb(16, 11, 152);
+  --c5: rgb(194, 214, 13);
+	--c6: rgba(133, 116, 31, 0.642);
+  --c7: rgb(18, 149, 147);
+	--c8: rgba(14, 112, 165, 0.642);
+  --c9: rgb(255, 0, 221);
+	--c10: rgba(145, 40, 174, 0.642);
+  --c11: rgba(146, 6, 167, 0.642);
+	--c12: rgb(253, 12, 169);
+
+}
+
+.wrapper {
+	min-width: min(400rem, 100%);
+}
+
+
+
+.box1 {
+	font-size: 3vw;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+	padding: 2.5vw;
+	border-image: conic-gradient(from var(--angle), var(--c4), var(--c3) 0.1turn, var(--c3) 0.15turn, var(--c4) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+  justify-content: center;
+
+}
+
+.box1:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+.box2 {
+	font-size: 3vw;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+	padding: 2.5vw;
+	border-image: conic-gradient(from var(--angle), var(--c6), var(--c5) 0.1turn, var(--c5) 0.15turn, var(--c6) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box2:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+.box {
+	font-size: 3vw;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+	padding: 2.5vw;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+.box3 {
+	font-size: 3vw;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+	padding: 2.5vw;
+	border-image: conic-gradient(from var(--angle), var(--c8), var(--c7) 0.1turn, var(--c7) 0.15turn, var(--c8) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box3:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+.box4 {
+	font-size: 3vw;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+	padding: 2.5vw;
+	border-image: conic-gradient(from var(--angle), var(--c10), var(--c9) 0.1turn, var(--c9) 0.15turn, var(--c10) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box4:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+.tt{
+  width: 60px;
+  height: min-content;
+}
+
+.box11 {
+	font-size: 3vw;
+	margin: max(1rem, 3vw);
+	border: 0.35rem solid;
+	padding: 2.5vw;
+  border-image: conic-gradient(from var(--angle), var(--c12), var(--c11) 0.1turn, var(--c12) 0.15turn, var(--c11) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+  justify-content: center;
+
+}
+
+.box11:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+.block {
+	position: relative;
+	font-size: 70px;
+	width: 500px;
+	height: 100px;
+	background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before, .block:after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+		#0000ff, #00ff00,#ffff00, #ff0000);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.block:after {
+	filter: blur(50px);
+}
